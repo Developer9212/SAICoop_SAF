@@ -33,6 +33,7 @@ public class SpringConfiguration {
     public DataSource conexion() {		
     	DriverManagerDataSource datasource = new DriverManagerDataSource(); 
        try {
+    	   System.out.println();
     		datasource.setUrl("jdbc:postgresql://"+fichero.getHost().trim()+":5432/"+fichero.getDatabase().trim());
         	datasource.setUsername(env.getProperty("spring.datasource.username"));
         	datasource.setPassword(env.getProperty("spring.datasource.password"));
