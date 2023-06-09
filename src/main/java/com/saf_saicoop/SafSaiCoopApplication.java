@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.saf_saicoop.entity")
 @EnableJpaRepositories("com.saf_saicoop.dao")
 public class SafSaiCoopApplication {
-
+    //wilmer
 	public static void main(String[] args) {
 		SpringApplication.run(SafSaiCoopApplication.class, args);
 	}
