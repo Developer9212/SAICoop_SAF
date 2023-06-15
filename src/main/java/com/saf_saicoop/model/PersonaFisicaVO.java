@@ -1,7 +1,13 @@
 package com.saf_saicoop.model;
 
-public class PersonaFisicaVO {
-   
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class PersonaFisicaVO {   
 	private String codProfesion;
 	private String codActividad;
 	private String codSector;

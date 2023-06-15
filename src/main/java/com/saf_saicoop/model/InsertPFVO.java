@@ -1,7 +1,14 @@
 package com.saf_saicoop.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class InsertPFVO {
    
 	private String codProfesion;
@@ -71,6 +78,18 @@ public class InsertPFVO {
 	private String indClieMyoCredit;
 	private String nomApodo;
 	private String extSecundario;
-	@JsonProperty(value = "datoAsociado")
 	private DatoAsociadoVO datoAsociado;
+	private FirmaVO firma;
+	private FotoVO foto;
+	private List<BeneficiarioVO>beneficiarios;
+	private List<ConvenioClienteVO>convenioXClientes;
+	private List<DirClienteVO>dirclientes;
+	private List<EmpleadoClienteVO>empleadosXClientes;
+	private List<GrupoClienteVO>grupoXClientes;
+	private List<IdClienteVO>idClientes;
+	private List<InfVehiculoVO>infVehiculos;
+	private List<IngresoEgresoVO>ingresosEgresos;
+	private List<RefComercialVO>refComerciales;
+	private List<RefPersonalVO>refPersonales;
+	private List<VinculacionVO>vinculaciones;
 }
